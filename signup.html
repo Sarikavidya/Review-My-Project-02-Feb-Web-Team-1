@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,14 +17,14 @@
 
     <!-- icon -->
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="fonts/icons/fontawesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="fonts/icons/fontawesome/css/font-awesome.min.css" />
 
-    <link rel="stylesheet" href="fonts/icons/sharehub/style.css"/>
+    <link rel="stylesheet" href="fonts/icons/sharehub/style.css" />
 
     <!-- Vendor -->
     <!-- Custom -->
     <link rel="stylesheet" href="vendor/magnificPopup/dist/magnific-popup.css" type="text/css" />
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet" />
 
     <!-- JAVA SCRIPT -->
     <!-- require -->
@@ -35,49 +36,65 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
-<!-- HEADER -->
-<header>
+    <!-- HEADER -->
+    <header>
 
-</header>
+    </header>
 
-<!-- MAIN -->
-<main>
-    <div class="sh-login">
-        <div class="sh-login__logo"><a href="index.php" class="sh-logo"><img src="fonts/icons/sharehub/svg/Sharehub.svg" alt=""></a></div>
-        <div class="sh-login__content">
-            <p>Sign up with Sharehub</p>
-            <div class="sh-login__form">
-                <form action="#">
-                    <input type="text" class="form-control" placeholder='Username' required>
-                    <input type="email" class="form-control" placeholder='Email' required>
-                    <input type="password" class="form-control" placeholder='Password' required>
-                    <input type="password" class="form-control" placeholder='Retype Password' required>
-                    <div class="sh-login__send">
-                        <a href="#">Already have an account?</a>
-                        <button type="submit" class="sh-btn">Sign up</button>
-                    </div>
-                    <div class="sh-login__footer">
-                        <p>or with Social Network</p>
-                        <div class="sh-login__social">
-                            <a href="" class="sh-btn-social__facebook sh-btn-social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="" class="sh-btn-social__twitter sh-btn-social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="" class="sh-btn-social__google sh-btn-social"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    <!-- MAIN -->
+    <main>
+        <div class="sh-login">
+            <div class="sh-login__logo">
+                <a href="#" class="sh-logo"><img src="fonts/icons/sharehub/svg/Sharehub.svg" alt=""></a>
+            </div>
+            <div class="sh-login__content">
+                <p>Sign up with Sharehub</p>
+                <div class="sh-login__form">
+                    <form action="/signup" method="post">
+                        <input type="text" class="form-control" name="name" placeholder='Username' required>
+                        <input type="email" class="form-control" name="email" placeholder='Email' required>
+                        <div class="sh-input-copy">
+                            <input type="password" id="myinput" class="form-control" name="password" placeholder='Password' required>
+                            <span class="eye">
+                       <i id="hide1" class="fa fa-eye eye1" aria-hidden="true"></i>
+                      </span>
                         </div>
-                    </div>
-                </form>
+                        <div class="sh-input-copy">
+                            <input type="password" id="myinputt" class="form-control" name="cpassword" placeholder='Retype Password' required>
+                            <span class="eye">
+                       <i id="hide2" class="fa fa-eye eye2" aria-hidden="true"></i>
+                       </span>
+                        </div>
+                        <div class="sh-login__send">
+                            <a href="login.html">Already have an account?</a>
+                            <button type="submit" class="sh-btn">Sign up</button>
+                        </div>
+                        <div class="sh-login__footer">
+                            <p>or with Social Network</p>
+                            <div class="sh-login__social">
+                                <a href="" class="sh-btn-social__facebook sh-btn-social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="" class="sh-btn-social__twitter sh-btn-social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="" class="sh-btn-social__google sh-btn-social"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 
-<!-- FOOTER -->
-<footer>
-    <div class="sh-footer">
-        <div class="container">
-            <p class="text-center">Terms & Conditons . Privacy Policy</p>
+    <!-- FOOTER -->
+    <footer>
+        <div class="sh-footer">
+            <div class="container">
+                <p class="text-center">Terms & Conditons . Privacy Policy</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+    <script type="text/javascript" src="js/password.js"></script>
+
 </body>
+
 </html>
